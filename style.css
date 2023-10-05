@@ -15,7 +15,8 @@ body {
 }
 
 header {
-    background-color: rgba(57, 127, 136, 0.788);
+    /* background-color: rgba(57, 127, 136, 0.788); */
+    background-color: rgba(63, 66, 14, 0.911);
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -24,7 +25,8 @@ header {
 }
 
 .logo img {
-    width: 100px;
+    width: 150px;
+    height: 80px;
 }
 
 nav ul {
@@ -101,37 +103,9 @@ h2 {
     bottom: 0px;
 }
 
-.portfolio-item:hover .comentario2 {
-    display: block;
-    bottom: 10px;
-}
-
-.popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    font-size: 24px;
-    text-align: center;
-    padding-top: 20%;
-    z-index: 9999;
-}
-
-#dicas {
-    cursor: pointer;
-}
-
-#dicas:hover .popup {
-    display: block;
-}
-
 
 footer {
-    background-color: rgba(57, 127, 136, 0.788);
+    background-color: rgba(63, 66, 14, 0.911);
     color: #fff;
     text-align: center;
     padding: 10px 0;

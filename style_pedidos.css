@@ -9,9 +9,10 @@ li {
     padding: 0;
 }
 
-/* Estilos gerais */
+
 body {
     font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
 }
 
 header {
@@ -42,12 +43,38 @@ nav a {
     text-decoration: none;
 }
 
-main {
-    height: 450px;
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2em;
 }
 
-main h1 {
-    margin-top: 20px;
+.item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn_pedido {
+    border: none;
+    padding: 0.5em 1em;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(13, 163, 126);
+    color: rgb(39, 7, 219);
+}
+
+.btn_pedido:hover {
+    background-color: rgb(18, 135, 170);
+    color: rgb(2, 61, 27);
 }
 
 footer {
