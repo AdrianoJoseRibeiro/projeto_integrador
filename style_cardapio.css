@@ -1,52 +1,98 @@
-/* Reset de estilos padrão do navegador */
-body,
-h1,
-h2,
-p,
-ul,
-li {
-    margin: 0;
-    padding: 0;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-    color: black;
+p {
+    font-size: 16px;
 }
 
-/* Estilos gerais */
-body {
-    font-family: Arial, sans-serif;
+h1 {
+    font-size: 70px;
 }
+
+h2 {
+    font-size: 50px;
+}
+
+
+button {
+    cursor: pointer;
+    border-radius: 15px 4px 15px 4px;
+    border: none;
+    font-weight: 600;
+}
+
 
 header {
-    background-color: rgba(63, 66, 14, 0.911);
-    color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 10px 20px;
-}
-
-.logo img {
-    width: 150px;
+    /* border: solid red 2px; */
     height: 80px;
 }
 
-nav ul {
-    list-style: none;
+#logo {
+    font-size: 28px;
+    font-weight: 600;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    color: #fff;
+.link-nav {
+    margin-left: 0px;
+    padding-left: -10px;
     text-decoration: none;
+    color: black;
+    font-size: 20px;
 }
 
+.btn-cadastro {
+    width: 148px;
+    height: 54px;
+    background-color: black;
+    color: white;
+}
+
+.btn-login {
+    width: 96px;
+    height: 54px;
+    background-color: rgba(254, 129, 14, 1);
+    color: white;
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.foto-menu {
+    display: block;
+    margin: auto;
+}
+
+.div-localizar {
+    margin-top: 40px;
+}
+
+.input-localizar {
+    margin-left: 510px;
+    width: 280px;
+    height: 25px;
+}
+
+.carrosel {
+    margin-top: 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.carrosel a {
+    text-decoration: none;
+    color: black;
+}
 
 .menu {
     display: flex;
@@ -64,6 +110,11 @@ nav a {
 
 .container {
     position: relative;
+}
+
+.container a {
+    text-decoration: none;
+    color: black;
 }
 
 .quadro_pratos {
@@ -101,15 +152,93 @@ nav a {
 }
 
 
-footer {
-    background-color: rgba(63, 66, 14, 0.911);
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    height: 80px;
+
+.rodape {
+    margin-top: 80px;
+    background-color: rgb(221, 241, 237);
+    height: 250px;
 }
 
-footer p {
-    margin-top: 20px;
-    font-size: 1.2rem;
+.rodape h3 {
+    font-size: 30px;
+}
+
+.rodape p {
+    font-size: 20px;
+}
+
+.flex-rodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tel {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.email {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-rodape h3 {
+    margin-top: 50px;
+}
+
+.nav-rodape-coluna {
+    display: flex;
+    margin-left: -20px;
+
+}
+
+.nav-rodape-left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+
+.nav-rodape-right {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.link_nav_footer {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+}
+
+
+.siga-rodape {
+    margin-bottom: 35px;
+}
+
+.siga {
+    margin-top: 0px;
+}
+
+.siga-rodape i {
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.fa-facebook {
+    font-size: 30px;
+    color: rgb(66 103 178);
+
+}
+
+.fa-twitter {
+    font-size: 30px;
+    color: skyblue;
+}
+
+.fa-instagram {
+    font-size: 30px;
+    color: rgb(131 58 180);
 }

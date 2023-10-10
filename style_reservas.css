@@ -62,53 +62,6 @@ header {
 }
 
 
-.form_label {
-    /* padding-top: 5px;
-    padding-bottom: 5px; */
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
-.form_input {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 200px;
-}
-
-#last_input {
-    margin-bottom: 15px;
-    /* padding-bottom: 50px; */
-    width: 1000px;
-    height: 250px;
-    display: block;
-}
-
-.btn_enviar {
-    margin: 10px 0 20px 5px;
-    width: 200px;
-    height: 50px;
-    font-weight: 600;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border-radius: 6px;
-    background-color: rgb(13, 163, 126);
-    color: rgb(39, 7, 219);
-}
-
-.btn_enviar:hover {
-    background-color: rgb(18, 135, 170);
-    color: rgb(2, 61, 27);
-
-}
-
-
-
-
-
-
-
 
 
 

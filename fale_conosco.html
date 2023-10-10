@@ -1,34 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fale Conosco Potiguares</title>
+    <title>Fale Conosco</title>
+    <link rel="icon" href="./img/Logo1.png" type="image/x-icon">
     <link rel="stylesheet" href="style_fale_conosco.css">
+
+    <!-- adiconado para poder criar os ícones das redes sociais no rodapé -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="./img/Logo1.png" alt="Logo Restaurante">
-
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="quem_somos.html">Quem Somos</a></li>
-                <li><a href="cardapio.html">Cardápio</a> </li>
-                <li><a href="pedidos.html">Pedidos</a></li>
-                <li><a href="fale_conosco.html">Fale Conosco</a></li>
-            </ul>
-        </nav>
+        <span id="logo">Cantinho<br>Nordestino</span>
+        <a href="index.html" class="link-nav">Home</a>
+        <a href="quem_somos.html" class="link-nav">Quem Somos</a>
+        <a href="cardapio.html" class="link-nav">Cardápio</a>
+        <a href="pedidos.html" class="link-nav">Pedidos</a>
+        <a href="reservas.html" class="link-nav">Reserva</a>
+        <a href="gift.html" class="link-nav">Gift Card</a>
+        <a href="local.html" class="link-nav">Localização</a>
+        <a href="fale_conosco.html" class="link-nav">Fale
+            Conosco</a>
+        <button class="btn-cadastro">Cadastre-se</button>
+        <button class="btn-login">Log in</button>
     </header>
 
+    <br><br>
     <main>
-        <h1>Fale Conosco - Restaurante Portiguares</h1>
+        <h1>Fale Conosco - Cantinho Nordestino</h1>
         <img src="./img/faleconosco.jpg" alt="faleconosco">
         <h2>Dúvidas, críticas ou sugestões, entre em contato conosco.</h2>
+
+        <br><br>
+
         <div class="form_label"><label for="Nome">Nome Completo:</label></div>
         <input class="form_input" type="text">
         <div class="form_label"><label for="Email">Email:</label></div>
@@ -41,10 +50,65 @@
         <input class="form_input" id="last_input" type="text">
         <button class="btn_enviar"><strong>Enviar</strong></button>
     </main>
-    <footer>
-        <h2>Obrigado pela sua Mensagem!</h2>
-        <br>
-        <h2>Restaurante Potiguares</h2>
+
+
+    <footer class="rodape">
+        <div class="flex-rodape">
+
+            <div class="contato-rodape">
+                <h3 class="contato">Entre em contato</h3>
+                <br>
+                <a class="tel" href="tel:+558435555555">
+                    +55 (84) 3555-5555
+                </a>
+                <br>
+                <br>
+                <a class="email" href="mailto:contato@cantinhonordestino.com.br">
+                    contato@cantinhonordestino.com.br
+                </a>
+
+            </div>
+
+            <div class="nav-rodape">
+
+                <h3>Navegação</h3>
+
+                <div class="nav-rodape-coluna">
+
+                    <div class="nav-rodape-left">
+                        <a href="index.html" class="link_nav_footer">Home</a>
+                        <a href="quem_somos.html" class="link_nav_footer">Quem Somos</a>
+                        <a href="cardapio.html" class="link_nav_footer">Cardápio</a>
+                        <a href="pedidos.html" class="link_nav_footer">Pedidos</a>
+                    </div>
+
+                    <div class="nav-rodape-right">
+                        <a href="reserva.html" class="link_nav_footer">Reservas</a>
+                        <a href="gift.html" class="link_nav_footer">Gift Card</a>
+                        <a href="local.html" class="link_nav_footer">Localização</a>
+                        <a href="fale_conosco.html" class="link_nav_footer">Fale Conosco</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="siga-rodape">
+                <h3 class="siga">Siga-nos</h3>
+                <a class="facebook" href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a class="twitter" href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a class="instagram" href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+
+
+        </div>
+
+
     </footer>
 </body>
 
