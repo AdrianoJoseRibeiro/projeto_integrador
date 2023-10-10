@@ -87,6 +87,11 @@ h1 {
     font-size: 20px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    ;
+    background-color: rgb(221, 241, 237);
+    height: 50px;
+    ;
 }
 
 .carrosel a {

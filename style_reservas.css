@@ -16,6 +16,9 @@ h2 {
     font-size: 50px;
 }
 
+h3 {
+    font-size: 36px;
+}
 
 button {
     cursor: pointer;
@@ -61,10 +64,38 @@ header {
 
 }
 
+.titulo,
+.corpo-texto {
+    text-align: center;
+}
 
+.reserva-mesa {
+    margin-left: 35%;
+}
 
+#data-reserva {
+    margin-right: 15px;
+}
 
+#hora-reserva {
+    margin-right: 15px;
+}
 
+#qtd-pessoas {
+    margin-right: 15px;
+}
+
+.btn_reserva {
+    width: 200px;
+    height: 54px;
+    background-color: rgba(254, 129, 14, 1);
+    color: white;
+    cursor: pointer;
+    border-radius: 15px 4px 15px 4px;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+}
 
 
 .rodape {

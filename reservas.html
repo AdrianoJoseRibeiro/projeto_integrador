@@ -32,7 +32,34 @@
 
     <main>
         <br><br>
-        <h1>Falta criar a tela com as reservas de mesa aqui</h1>
+        <h1 class="titulo">Reservas Cantinho Nordestino</h1>
+        <br><br>
+        <h3 class="corpo-texto">
+            Reservas onlines podem ser realizadas para até 6 pessoas.
+            <br><br>
+            Se você deseja reservar uma mesa para mais de 6 pessoas, por favor entre em contato pelo telefone ou e-mail
+            Para mais informações de agendamentos e eventos.
+            <br><br>
+        </h3>
+        <div class="reserva-mesa">
+            <form action="" class="form_reserva">
+                <input type="date" name="data-reserva" id="data-reserva" required>
+                <input type="time" name="hora-reserva" id="hora-reserva" min="10:00" max="20:45" step="00:15" required>
+                <select name="qtd-pessoas" id="qtd-pessoas" form="form_reserva">
+                    <option value="uma_pessoa">1 Pessoa</option>
+                    <option value="duas_pessoas">2 Pessoas</option>
+                    <option value="tres_pessoas">3 Pessoas</option>
+                    <option value="quatro_pessoas">4 Pessoas</option>
+                    <option value="cinco_pessoas">5 Pessoas</option>
+                    <option value="seis_pessoas">6 Pessoas</option>
+                </select>
+                <input type="submit" value="Reserve sua Mesa" class="btn_reserva">
+            </form>
+        </div>
+
+
+
+
     </main>
 
     <footer class="rodape">
