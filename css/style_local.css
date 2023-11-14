@@ -30,12 +30,13 @@ header {
     justify-content: space-around;
     align-items: center;
     /* border: solid red 2px; */
-    height: 80px;
+    height: 140px;
 }
 
 #logo {
-    font-size: 28px;
-    font-weight: 600;
+    width: 120px;
+    height: 90px;
+    margin-top: 10px;
 }
 
 .link-nav {
@@ -44,6 +45,27 @@ header {
     text-decoration: none;
     color: black;
     font-size: 20px;
+    position: relative;
+}
+
+.link-nav::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 4px;
+    background: rgba(254, 129, 14, 1);
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 1s;
+
+}
+
+.link-nav:hover::after {
+    transform-origin: left;
+    transform: scaleX(1)
 }
 
 .btn-cadastro {
@@ -51,6 +73,23 @@ header {
     height: 54px;
     background-color: black;
     color: white;
+    position: relative;
+}
+
+.btn-cadastro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 4px 15px 4px;
+    border: none;
+    outline: 2px solid black;
+    outline-offset: 3px;
+    outline-width: 3px;
+    animation: pulse 2s linear infinite;
+
 }
 
 .btn-login {
@@ -58,6 +97,22 @@ header {
     height: 54px;
     background-color: rgba(254, 129, 14, 1);
     color: white;
+    position: relative;
+}
+
+.btn-login::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 4px 15px 4px;
+    border: none;
+    outline: 2px solid rgba(254, 129, 14, 1);
+    outline-offset: 3px;
+    outline-width: 3px;
+    animation: pulse 2s linear infinite;
 
 }
 
@@ -146,10 +201,32 @@ h4 {
 
 
 .link_nav_footer {
+    width: fit-content;
     font-size: 20px;
     text-decoration: none;
     color: black;
     margin-top: 10px;
+    position: relative;
+}
+
+.link_nav_footer::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: rgba(254, 129, 14, 1);
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 1s;
+
+}
+
+.link_nav_footer:hover::after {
+    transform-origin: left;
+    transform: scaleX(1)
 }
 
 
@@ -173,12 +250,24 @@ h4 {
 
 }
 
-.fa-twitter {
+.fa-x-twitter {
     font-size: 30px;
-    color: skyblue;
+    color: rgb(37, 40, 41);
 }
 
 .fa-instagram {
     font-size: 30px;
     color: rgb(131 58 180);
+}
+
+@keyframes pulse {
+    0% {
+        outline-offset: 3px;
+        opacity: 1;
+    }
+
+    100% {
+        outline-offset: 15px;
+        opacity: 0;
+    }
 }

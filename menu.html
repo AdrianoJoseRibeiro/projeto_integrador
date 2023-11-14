@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Cantinho Nordestino</title>
+    <link rel="icon" href="./img/Logo_1.JPG" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style_menu.css">
+
+    <!-- adiconado para poder criar os ícones das redes sociais no rodapé -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="./js/script_cardapio.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <!-- <span id="logo">Cantinho<br>Nordestino</span> -->
+        <img src="./img/Logo_1.JPG" alt="Logo Restaurante" id="logo">
+        <a href="index.html" class="link-nav">Home</a>
+        <a href="quem_somos.html" class="link-nav">Quem Somos</a>
+        <a href="#" class="link-nav">Menu</a>
+        <a href="pedidos.html" class="link-nav">Pedidos</a>
+        <a href="reservas.html" class="link-nav">Reservas</a>
+        <a href="gift.html" class="link-nav">Gift Card</a>
+        <a href="local.html" class="link-nav">Localização</a>
+        <a href="fale_conosco.html" class="link-nav">Fale
+            Conosco</a>
+        <button class="btn-cadastro">Cadastre-se</button>
+        <button class="btn-login">Log in</button>
+    </header>
+
+    <div class="main">
+        <h1>
+            Cardápio
+            <br>
+            Cantinho Nordestino
+        </h1>
+        <img src="./img/Menu.jpg" alt="foto menu em cima da mesa" class="foto-menu">
+
+        <div class="div-localizar">
+            <input type="text" class="input-localizar" placeholder="Procure a comida que deseja">
+            <a href="#" class="click-localizar">
+                <!-- <i class="fas fa-search"></i> -->
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+        </div>
+
+        <div class="carrosel">
+            <a href="" class="">Queridinhos da Casa</a>
+            <a href="" class="">Petiscos</a>
+            <a href="" class="">Carnes</a>
+            <a href="" class="">Frutos do Mar</a>
+            <a href="" class="">Pratos Executivos</a>
+            <a href="" class="">Massas</a>
+            <a href="" class="">Acompanhamentos</a>
+            <a href="" class="">Bebidas</a>
+            <a href="" class="">Sobremesas</a>
+        </div>
+
+        <div class="menu">
+            <div class="dropdown" id="queridinhos-drop" data-dropdown>
+                <button class="link" id="link-queridinhos" data-dropdown-link>Queridinhos da Casa</button>
+                <div class="dropdown-menu" id="dropdown-menu-queridinhos">
+                    <div class="container">
+                        <a class="link_pratos" href="#">
+                            <div class="quadro_pratos">
+                                <div class="texto_quadro">
+                                    <div class="nome_prato">Tapioca</div>
+                                    <div class="desc_prato">A Tapioca é uma ótima opção para quem procura um alimento
+                                        saudável,
+                                        versátil e com baixo
+                                        índice
+                                        glicêmico</div>
+                                    <div class="preco_prato">R$ 7,00</div>
+
+                                </div>
+                                <div class="foto_quadro">
+                                    <img src="./img/Tapioca.jpg" alt="Tapioca">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="container">
+                        <a class="link_pratos" href="#">
+                            <div class="quadro_pratos">
+                                <div class="texto_quadro">
+                                    <div class="nome_prato">Bolo de Rolo</div>
+                                    <div class="desc_prato">
+                                        Semelhante ao de um rocambole, mas com camadas ainda mais finas e
+                                        delicadas e recheio de goiabada
+                                    </div>
+                                    <div class="preco_prato">R$ 20,00</div>
+
+                                </div>
+                                <div class="foto_quadro">
+                                    <img src="./img/Bolo_de_Rolo.webp" alt="Bolo de Rolo">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="container">
+                        <a class="link_pratos" href="#">
+                            <div class="quadro_pratos">
+                                <div class="texto_quadro">
+                                    <div class="nome_prato">Caranguejada</div>
+                                    <div class="desc_prato">
+                                        Feito com caranguejos cozidos em molho
+                                        preparado com leite de coco, azeite e temperos verdes
+                                    </div>
+                                    <div class="preco_prato">R$ 28,00</div>
+
+                                </div>
+                                <div class="foto_quadro">
+                                    <img src="./img/Caranguejo.webp" alt="Caranguejada">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="container">
+                        <a class="link_pratos" href="#">
+                            <div class="quadro_pratos">
+                                <div class="texto_quadro">
+                                    <div class="nome_prato">Moqueca</div>
+                                    <div class="desc_prato">
+                                        Cozido de peixes, preparado com frutos do mar
+                                        e temperos (dentre eles o leite de coco e o azeite de dendê)</div>
+                                    <div class="preco_prato">R$ 28,00</div>
+
+                                </div>
+                                <div class="foto_quadro">
+                                    <img src="./img/Moqueca.jpg" alt="Moqueca">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown" id="petiscos-drop" data-dropdown>
+                <button class="link" id="link-petiscos" data-dropdown-link>Petiscos</button>
+                <div class="dropdown-menu" id="dropdown-menu-petiscos">
+                    <div class="container">
+                        <a class="link_pratos" href="#">
+                            <div class="quadro_pratos">
+                                <div class="texto_quadro">
+                                    <div class="nome_prato">Tapioca</div>
+                                    <div class="desc_prato">A Tapioca é uma ótima opção para quem procura um alimento
+                                        saudável,
+                                        versátil e com baixo
+                                        índice
+                                        glicêmico</div>
+                                    <div class="preco_prato">R$ 7,00</div>
+
+                                </div>
+                                <div class="foto_quadro">
+                                    <img src="./img/Tapioca.jpg" alt="Tapioca">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="container">
+                        <a class="link_pratos" href="#">
+                            <div class="quadro_pratos">
+                                <div class="texto_quadro">
+                                    <div class="nome_prato">Bolo de Rolo</div>
+                                    <div class="desc_prato">
+                                        Semelhante ao de um rocambole, mas com camadas ainda mais finas e
+                                        delicadas e recheio de goiabada
+                                    </div>
+                                    <div class="preco_prato">R$ 20,00</div>
+
+                                </div>
+                                <div class="foto_quadro">
+                                    <img src="./img/Bolo_de_Rolo.webp" alt="Bolo de Rolo">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="container">
+                        <a class="link_pratos" href="#">
+                            <div class="quadro_pratos">
+                                <div class="texto_quadro">
+                                    <div class="nome_prato">Caranguejada</div>
+                                    <div class="desc_prato">
+                                        Feito com caranguejos cozidos em molho
+                                        preparado com leite de coco, azeite e temperos verdes
+                                    </div>
+                                    <div class="preco_prato">R$ 28,00</div>
+
+                                </div>
+                                <div class="foto_quadro">
+                                    <img src="./img/Caranguejo.webp" alt="Caranguejada">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="container">
+                        <a class="link_pratos" href="#">
+                            <div class="quadro_pratos">
+                                <div class="texto_quadro">
+                                    <div class="nome_prato">Moqueca</div>
+                                    <div class="desc_prato">
+                                        Cozido de peixes, preparado com frutos do mar
+                                        e temperos (dentre eles o leite de coco e o azeite de dendê)</div>
+                                    <div class="preco_prato">R$ 28,00</div>
+
+                                </div>
+                                <div class="foto_quadro">
+                                    <img src="./img/Moqueca.jpg" alt="Moqueca">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> <!--encerramento classe menu -->
+    </div>
+
+    <footer class="rodape">
+        <div class="flex-rodape">
+
+            <div class="contato-rodape">
+                <h3 class="contato">Entre em contato</h3>
+                <br>
+                <a class="tel" href="tel:+558435555555">
+                    +55 (84) 3555-5555
+                </a>
+                <br>
+                <br>
+                <a class="email" href="mailto:contato@cantinhonordestino.com.br">
+                    contato@cantinhonordestino.com.br
+                </a>
+
+            </div>
+
+            <div class="nav-rodape">
+
+                <h3>Navegação</h3>
+
+                <div class="nav-rodape-coluna">
+
+                    <div class="nav-rodape-left">
+                        <a href="index.html" class="link_nav_footer">Home</a>
+                        <a href="quem_somos.html" class="link_nav_footer">Quem Somos</a>
+                        <a href="#" class="link_nav_footer">Menu</a>
+                        <a href="pedidos.html" class="link_nav_footer">Pedidos</a>
+                    </div>
+
+                    <div class="nav-rodape-right">
+                        <a href="reservas.html" class="link_nav_footer">Reservas</a>
+                        <a href="gift.html" class="link_nav_footer">Gift Card</a>
+                        <a href="local.html" class="link_nav_footer">Localização</a>
+                        <a href="fale_conosco.html" class="link_nav_footer">Fale Conosco</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="siga-rodape">
+                <h3 class="siga">Siga-nos</h3>
+                <a class="facebook" href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a class="twitter" href="https://twitter.com/" target="_blank">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a class="instagram" href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+
+
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
