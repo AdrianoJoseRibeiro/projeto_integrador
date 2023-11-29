@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservas Cantinho Nordestino</title>
     <link rel="icon" href="./img/Logo_1.JPG" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style_cabecalho.css">
+    <link rel="stylesheet" href="./css/style_login.css">
     <link rel="stylesheet" href="./css/style_gift.css">
+    <link rel="stylesheet" href="./css/style_anima_gift.css">
+    <link rel="stylesheet" href="./css/style_rodape.css">
 
     <!-- adiconado para poder criar os ícones das redes sociais no rodapé -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="./js/login.js" defer></script>
 </head>
 
 <body>
@@ -31,6 +37,68 @@
         <button class="btn-login">Log in</button>
     </header>
 
+
+    <section class="wrapper-form-login">
+        <div class="wrapper-son">
+            <span class="icone-fechar"><ion-icon name="close"></ion-icon></span>
+            <div class="form-box-login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icone"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>E-mail</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icone"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Senha</label>
+                    </div>
+                    <div class="lembrar-esquecer">
+                        <label><input type="checkbox"> Lembrar-me</label>
+                        <a href="#">Esqueceu a Senha?</a>
+                    </div>
+                    <button class="btn_submit">Login</button>
+                    <div class="login-cadastro">
+                        <p>Novo por aqui? <a href="#" class="cadastro-link">Cadastre-se</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box-cadastro">
+                <h2>Cadastro</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icone"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icone"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icone"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="lembrar-esquecer">
+                        <label class="cadastro-label"><input type="checkbox"> Concordo com os termos e condições</label>
+                    </div>
+                    <button class="btn_submit">Register</button>
+                    <div class="login-cadastro">
+                        <p>Você já tem uma conta? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
     <main>
         <br><br>
         <div class="apresentacao">
@@ -42,6 +110,27 @@
                 <p>Compre cartões-presente eletrônicos abaixo!</p>
                 <br>
                 <p>Cartões físicos estão disponíveis para compra no restaurante</p>
+
+
+
+                <div class="box">
+                    <div class="box-tape">
+                        <div class="box-tape-left"></div>
+                        <div class="box-tape-right"></div>
+                        <div class="box-tape-center"></div>
+                    </div>
+                    <div class="box-gifts">
+                        <div class="box-gift-shadow"></div>
+                    </div>
+                    <div class="box-gift"></div>
+                    <div class="box-star box-star-1"></div>
+                    <div class="box-star box-star-2"></div>
+                    <div class="box-star box-star-3"></div>
+                    <div class="box-star box-star-4"></div>
+                    <div class="box-star box-star-5"></div>
+                </div>
+
+
             </div>
         </div>
         <br><br><br><br>
@@ -133,3 +222,9 @@
 
 
     </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

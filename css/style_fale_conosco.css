@@ -1,19 +1,27 @@
-* {
-    margin: 0px;
-    padding: 0px;
+html {
+    font-size: 62.5%;
     box-sizing: border-box;
 }
 
+
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+
 p {
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 7rem;
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 4rem;
 }
 
 
@@ -25,135 +33,333 @@ button {
 }
 
 
-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* border: solid red 2px; */
-    height: 140px;
-}
-
-#logo {
-    width: 120px;
-    height: 90px;
-    margin-top: 10px;
-}
-
-.link-nav {
-    margin-left: 0px;
-    padding-left: -10px;
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    position: relative;
-}
-
-.link-nav::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 4px;
-    background: rgba(254, 129, 14, 1);
-    border-radius: 5px;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform 1s;
-
-}
-
-.link-nav:hover::after {
-    transform-origin: left;
-    transform: scaleX(1)
-}
-
-.btn-cadastro {
-    width: 148px;
-    height: 54px;
-    background-color: black;
-    color: white;
-    position: relative;
-}
-
-.btn-cadastro::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 15px 4px 15px 4px;
-    border: none;
-    outline: 2px solid black;
-    outline-offset: 3px;
-    outline-width: 3px;
-    animation: pulse 2s linear infinite;
-
-}
-
-.btn-login {
-    width: 96px;
-    height: 54px;
-    background-color: rgba(254, 129, 14, 1);
-    color: white;
-    position: relative;
-
-}
-
-.btn-login::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 15px 4px 15px 4px;
-    border: none;
-    outline: 2px solid rgba(254, 129, 14, 1);
-    outline-offset: 3px;
-    outline-width: 3px;
-    animation: pulse 2s linear infinite;
-
-}
-
 
 .form_label {
-    /* padding-top: 5px;
-    padding-bottom: 5px; */
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    margin-left: 1rem;
+    font-size: 2rem;
 }
 
-.form_input {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 200px;
+
+.dica-nome {
+    position: relative;
 }
 
-#last_input {
-    margin-bottom: 15px;
-    /* padding-bottom: 50px; */
-    width: 1000px;
-    height: 250px;
+.dica-nome::before {
+    content: '?';
+    position: absolute;
+    top: -2.2rem;
+    left: 16rem;
+    z-index: 1;
+}
+
+.dica-nome::after {
+    content: '';
+    position: absolute;
+    top: -2.2rem;
+    left: 15.27rem;
+    background-color: orange;
+    border-radius: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.dica-nome:hover .dica-nome-texto {
     display: block;
 }
 
-.btn_enviar {
-    margin: 10px 0 20px 5px;
-    width: 200px;
-    height: 50px;
-    font-weight: 600;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border-radius: 6px;
-    background-color: rgb(13, 163, 126);
-    color: rgb(39, 7, 219);
+.dica-nome-texto {
+    position: absolute;
+    left: 18rem;
+    top: -2.1rem;
+    display: none;
+    color: red;
 }
 
-.btn_enviar:hover {
+
+.dica-email {
+    position: relative;
+}
+
+.dica-email::before {
+    content: '?';
+    position: absolute;
+    top: -2.3rem;
+    left: 6.5rem;
+    z-index: 1;
+}
+
+.dica-email::after {
+    content: '';
+    position: absolute;
+    top: -2.3rem;
+    left: 5.76rem;
+    background-color: orange;
+    border-radius: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.dica-email:hover .dica-email-texto {
+    display: block;
+}
+
+.dica-email-texto {
+    position: absolute;
+    left: 8.5rem;
+    top: -2.1rem;
+    display: none;
+    color: red;
+}
+
+
+.dica-cel {
+    position: relative;
+}
+
+.dica-cel::before {
+    content: '?';
+    position: absolute;
+    top: -2.2rem;
+    left: 14.6rem;
+    z-index: 1;
+}
+
+.dica-cel::after {
+    content: '';
+    position: absolute;
+    top: -2.2rem;
+    left: 13.87rem;
+    background-color: orange;
+    border-radius: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.dica-cel:hover .dica-cel-texto {
+    display: block;
+}
+
+.dica-cel-texto {
+    position: absolute;
+    left: 16.5rem;
+    top: -2.1rem;
+    display: none;
+    color: red;
+}
+
+
+.dica-assunto {
+    position: relative;
+}
+
+.dica-assunto::before {
+    content: '?';
+    position: absolute;
+    top: -2.2rem;
+    left: 9rem;
+    z-index: 1;
+}
+
+.dica-assunto::after {
+    content: '';
+    position: absolute;
+    top: -2.2rem;
+    left: 8.27rem;
+    background-color: orange;
+    border-radius: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.dica-assunto:hover .dica-assunto-texto {
+    display: block;
+}
+
+.dica-assunto-texto {
+    position: absolute;
+    left: 11rem;
+    top: -2.1rem;
+    display: none;
+    color: red;
+}
+
+
+.dica-msg {
+    position: relative;
+}
+
+.dica-msg::before {
+    content: '?';
+    position: absolute;
+    top: -2.2rem;
+    left: 11.33rem;
+    z-index: 1;
+}
+
+.dica-msg::after {
+    content: '';
+    position: absolute;
+    top: -2.2rem;
+    left: 10.57rem;
+    background-color: orange;
+    border-radius: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.dica-msg:hover .dica-msg-texto {
+    display: block;
+}
+
+.dica-msg-texto {
+    position: absolute;
+    left: 13.3rem;
+    top: -2.1rem;
+    display: none;
+    color: red;
+}
+
+
+.form_input {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-left: 1rem;
+    min-width: 25rem;
+    padding-left: .5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.form_input.errado {
+    border: solid 2px red;
+    background: transparent;
+    background-color: red;
+}
+
+.form_input.certo {
+    border: solid 2px green;
+    background-color: rgb(96, 172, 96);
+
+}
+
+
+/* #nome-input+span {
+    position: relative;
+}
+
+#nome-input+span::before {
+    content: '';
+    position: absolute;
+    top: -.8rem;
+    left: -24.6rem;
+    width: 24.3rem;
+    height: 2.2rem;
+    border: none;
+    outline: 2px solid red;
+    outline-offset: 3px;
+    outline-width: 3px;
+    animation: pulse 2s linear infinite;
+    user-select: none;
+} */
+
+
+#cel-input {
+    letter-spacing: .25rem;
+}
+
+#nome,
+#email,
+#cel,
+#assunto,
+#msg {
+    position: relative;
+}
+
+.ajuda-texto {
+    position: absolute;
+    left: 27rem;
+    top: 3.5rem;
+    font-size: 2.3rem;
+    color: red;
+    display: none;
+}
+
+.ajuda-texto.active {
+    display: block;
+}
+
+
+
+.last_input {
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    width: 100rem;
+    height: 25rem;
+    display: block;
+    padding: 1rem 1rem;
+    font-size: 1.6rem;
+
+}
+
+.last_input.errado {
+    border: solid 2px red;
+    background-color: red;
+}
+
+.last_input.certo {
+    border: solid 2px green;
+    background-color: rgb(96, 172, 96);
+
+}
+
+.ajuda-texto-msg {
+    font-size: 2.3rem;
+    margin-left: 1rem;
+    color: red;
+    display: none;
+
+}
+
+.ajuda-texto-msg.active {
+    display: block;
+}
+
+select {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-left: 1rem;
+    width: 25rem;
+    padding-left: .5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.assuntos.active {
+    border: solid 2px green;
+    background-color: rgb(96, 172, 96);
+}
+
+
+.btn-enviar {
+    margin: 10px 0 20px 5px;
+    width: 20rem;
+    height: 5rem;
+    font-weight: 600;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: rgba(254, 129, 14, 1);
+    color: white;
+}
+
+.btn-enviar:hover {
     background-color: rgb(18, 135, 170);
     color: rgb(2, 61, 27);
 
@@ -161,14 +367,14 @@ header {
 
 .btn-limpar {
     margin: 10px 0 20px 5px;
-    width: 200px;
-    height: 50px;
+    width: 20rem;
+    height: 5rem;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 2rem;
     cursor: pointer;
     border-radius: 6px;
     background-color: black;
-    color: red;
+    color: white;
 }
 
 
@@ -181,134 +387,14 @@ header {
 
 
 
-
-
-
-
-
-
-.rodape {
-    margin-top: 80px;
-    background-color: rgb(221, 241, 237);
-    height: 250px;
-}
-
-.rodape h3 {
-    font-size: 30px;
-}
-
-.rodape p {
-    font-size: 20px;
-}
-
-.flex-rodape {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.tel {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.email {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.nav-rodape h3 {
-    margin-top: 50px;
-}
-
-.nav-rodape-coluna {
-    display: flex;
-    margin-left: -20px;
-
-}
-
-.nav-rodape-left {
-    display: flex;
-    flex-direction: column;
-    margin-right: 30px;
-}
-
-
-.nav-rodape-right {
-    display: flex;
-    flex-direction: column;
-}
-
-
-.link_nav_footer {
-    width: fit-content;
-    font-size: 20px;
-    text-decoration: none;
-    color: black;
-    margin-top: 10px;
-    position: relative;
-}
-
-.link_nav_footer::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 2px;
-    background: rgba(254, 129, 14, 1);
-    border-radius: 5px;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform 1s;
-
-}
-
-.link_nav_footer:hover::after {
-    transform-origin: left;
-    transform: scaleX(1)
-}
-
-
-.siga-rodape {
-    margin-bottom: 35px;
-}
-
-.siga {
-    margin-top: 0px;
-}
-
-
-.siga-rodape i {
-    margin-top: 15px;
-    margin-right: 10px;
-}
-
-.fa-facebook {
-    font-size: 30px;
-    color: rgb(66 103 178);
-
-}
-
-.fa-x-twitter {
-    font-size: 30px;
-    color: rgb(37, 40, 41);
-}
-
-.fa-instagram {
-    font-size: 30px;
-    color: rgb(131 58 180);
-}
-
-
 @keyframes pulse {
     0% {
-        outline-offset: 3px;
+        outline-offset: .3rem;
         opacity: 1;
     }
 
     100% {
-        outline-offset: 15px;
+        outline-offset: 1.5rem;
         opacity: 0;
     }
 }

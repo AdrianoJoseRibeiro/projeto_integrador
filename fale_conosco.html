@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale Conosco</title>
     <link rel="icon" href="./img/Logo_1.JPG" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style_cabecalho.css">
+    <link rel="stylesheet" href="./css/style_login.css">
     <link rel="stylesheet" href="./css/style_fale_conosco.css">
+    <link rel="stylesheet" href="./css/style_rodape.css">
+
 
     <!-- adiconado para poder criar os ícones das redes sociais no rodapé -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="./js/fale_conosco.js" defer></script>
+    <script src="./js/login.js" defer></script>
 </head>
 
 <body>
@@ -30,6 +37,68 @@
         <button class="btn-login">Log in</button>
     </header>
 
+
+
+
+    <section class="wrapper-form-login">
+        <div class="wrapper-son">
+            <span class="icone-fechar"><ion-icon name="close"></ion-icon></span>
+            <div class="form-box-login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icone"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>E-mail</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icone"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Senha</label>
+                    </div>
+                    <div class="lembrar-esquecer">
+                        <label><input type="checkbox"> Lembrar-me</label>
+                        <a href="#">Esqueceu a Senha?</a>
+                    </div>
+                    <button class="btn_submit">Login</button>
+                    <div class="login-cadastro">
+                        <p>Novo por aqui? <a href="#" class="cadastro-link">Cadastre-se</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box-cadastro">
+                <h2>Cadastro</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icone"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icone"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icone"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="lembrar-esquecer">
+                        <label class="cadastro-label"><input type="checkbox"> Concordo com os termos e condições</label>
+                    </div>
+                    <button class="btn_submit">Register</button>
+                    <div class="login-cadastro">
+                        <p>Você já tem uma conta? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
     <br><br>
     <main>
         <h1>Fale Conosco - Cantinho Nordestino</h1>
@@ -39,19 +108,61 @@
 
         <br><br>
 
-        <form action="" class="dados">
-            <div class="form_label"><label for="Nome">Nome Completo:</label></div>
-            <input class="form_input" type="text" required>
-            <div class="form_label"><label for="Email">Email:</label></div>
-            <input class="form_input" type="text" required>
-            <div class="form_label"><label for="Numero">Número Celular:</label></div>
-            <input class="form_input" type="text" required>
-            <div class="form_label"><label for="Assunto">Assunto:</label></div>
-            <input class="form_input" type="text" required>
-            <div class="form_label"><label for="Mensagem">Mensagem:</label></div>
-            <input class="form_input" id="last_input" type="text" required>
-            <button class="btn_enviar"><strong>Enviar</strong></button>
-            <button class="btn-limpar"><strong>Limpar</strong></button>
+        <form action="_self" class="dados">
+            <div class="form_label" id="nome"><label for="Nome">*Nome Completo:</label>
+                <div class="dica-nome">
+                    <span class="dica-nome-texto">Campo Obrigatório. O nome deve conter pelo menos 5 letras</span>
+                </div>
+                <p class="ajuda-texto" id="ajuda-nome">oi</p>
+            </div>
+            <input class="form_input" id="nome-input" type="text" required><span class="span-nome"></span>
+
+            <div class="form_label" id="email"><label for="Email">Email:</label>
+                <div class="dica-email">
+                    <span class="dica-email-texto">Campo Obrigatório, caso o celular não seja informado.</span>
+                </div>
+                <p class="ajuda-texto" id="ajuda-email">oi</p>
+            </div>
+            <input class="form_input" id="email-input" type="text" required placeholder="Ex: nome@dominio.com">
+
+            <div class="form_label" id="cel"><label for="Numero">Número Celular:</label>
+                <div class="dica-cel">
+                    <span class="dica-cel-texto">Campo Obrigatório, caso o e-mail não seja informado</span>
+                </div>
+                <p class="ajuda-texto" id="ajuda-cel">oi</p>
+            </div>
+            <input class="form_input" id="cel-input" type="tel" required placeholder="Ex: (11)98877-5544">
+
+            <div class="form_label" id="assunto"><label for="Assunto">*Assunto:</label>
+                <div class="dica-assunto">
+                    <span class="dica-assunto-texto">Selecione um dos assuntos da lista</span>
+                </div>
+                <p class="ajuda-texto" id="ajuda-assunto">oi</p>
+            </div>
+            <!-- <input class="form_input" type="text" required> -->
+            <select name="assunto" id="selecao-assunto" class="assuntos active" required>
+                <option value="eventos">Eventos</option>
+                <option value="duvidas">Dúvidas</option>
+                <option value="criticas">Críticas</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="outros">Outros</option>
+            </select>
+
+            <div class="form_label" id="msg"><label for="Mensagem">*Mensagem:</label>
+                <div class="dica-msg">
+                    <span class="dica-msg-texto">Campo Obrigatório. A mensagem deve conter pelo menos 5 letras</span>
+                </div>
+
+            </div>
+
+
+            <div>
+                <textarea class="last_input" id="last_input" name="last_input" rows="20" cols="50"></textarea>
+                <label for="last_input" class="ajuda-texto-msg" id="ajuda-msg"> </label>
+            </div>
+            <!-- <input class="form_input" id="last_input" type="text" required> -->
+            <button class="btn-enviar" type="button" id="btn-enviar"><strong>Enviar</strong></button>
+            <button class="btn-limpar" type="reset" id="btn-limpar"><strong>Limpar</strong></button>
         </form>
     </main>
 
@@ -114,6 +225,10 @@
 
 
     </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>

@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Cantinho Nordestino</title>
     <link rel="icon" href="./img/Logo_1.JPG" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style_cabecalho.css">
+    <link rel="stylesheet" href="./css/style_login.css">
+    <link rel="stylesheet" href="./css/style_cafe.css">
     <link rel="stylesheet" href="./css/style_menu.css">
+    <link rel="stylesheet" href="./css/style_rodape.css">
 
     <!-- adiconado para poder criar os ícones das redes sociais no rodapé -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="./js/script_cardapio.js" defer></script>
+    <script src="./js/script_menu.js" defer></script>
+    <script src="./js/login.js" defer></script>
 </head>
 
 <body>
@@ -33,196 +38,888 @@
         <button class="btn-login">Log in</button>
     </header>
 
-    <div class="main">
-        <h1>
-            Cardápio
-            <br>
-            Cantinho Nordestino
-        </h1>
-        <img src="./img/Menu.jpg" alt="foto menu em cima da mesa" class="foto-menu">
+    <section class="wrapper-form-login">
+        <div class="wrapper-son">
+            <span class="icone-fechar"><ion-icon name="close"></ion-icon></span>
+            <div class="form-box-login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icone"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>E-mail</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icone"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Senha</label>
+                    </div>
+                    <div class="lembrar-esquecer">
+                        <label><input type="checkbox"> Lembrar-me</label>
+                        <a href="#">Esqueceu a Senha?</a>
+                    </div>
+                    <button class="btn_submit">Login</button>
+                    <div class="login-cadastro">
+                        <p>Novo por aqui? <a href="#" class="cadastro-link">Cadastre-se</a></p>
+                    </div>
+                </form>
+            </div>
 
-        <div class="div-localizar">
+            <div class="form-box-cadastro">
+                <h2>Cadastro</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icone"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icone"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icone"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="lembrar-esquecer">
+                        <label class="cadastro-label"><input type="checkbox"> Concordo com os termos e condições</label>
+                    </div>
+                    <button class="btn_submit">Register</button>
+                    <div class="login-cadastro">
+                        <p>Você já tem uma conta? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <div class="main">
+        <h2> Menu </h2>
+        <h2> Cantinho Nordestino</h2>
+        <br><br><br><br>
+
+        <div class="animacoes">
+            <div class="animacao-pacman">
+                <div class="pacman"></div>
+                <img src="./img/Pizza-svg.webp" alt="pedaço pizza" class="pizza">
+            </div>
+            <img src="./img/Menu.jpg" alt="foto menu em cima da mesa" class="foto-menu">
+
+            <div class="cup-wrap">
+                <div class="cup">
+                    <img src="./img/cup.png" alt="cup">
+                </div>
+
+                <div class="smoke-wrap">
+                    <img class="smoke" src="./img/smoke.png" alt="smoke">
+                </div>
+                <div class="smoke-wrap">
+                    <img class="smoke2" src="./img/smoke.png" alt="smoke">
+                </div>
+                <div class="smoke-wrap">
+                    <img class="smoke3" src="./img/smoke.png" alt="smoke">
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- <div class="div-localizar">
             <input type="text" class="input-localizar" placeholder="Procure a comida que deseja">
             <a href="#" class="click-localizar">
                 <!-- <i class="fas fa-search"></i> -->
-                <i class="fa-solid fa-magnifying-glass"></i>
+        <!--  <i class="fa-solid fa-magnifying-glass"></i>
             </a>
+        </div> -->
+        <div class="div-localizar">
+            <div class="search-bar">
+                <input type="text" placeholder="Search..." />
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
         </div>
-
         <div class="carrosel">
-            <a href="" class="">Queridinhos da Casa</a>
-            <a href="" class="">Petiscos</a>
-            <a href="" class="">Carnes</a>
-            <a href="" class="">Frutos do Mar</a>
-            <a href="" class="">Pratos Executivos</a>
-            <a href="" class="">Massas</a>
-            <a href="" class="">Acompanhamentos</a>
-            <a href="" class="">Bebidas</a>
-            <a href="" class="">Sobremesas</a>
+            <a class="anchor-querid" id="anchor-querid">Queridinhos da Casa</a>
+            <a class="anchor-petisc" id="anchor-petisc">Petiscos</a>
+            <a class="anchor-carnes" id="anchor-carnes">Carnes</a>
+            <a class="anchor-frutos" id="anchor-frutos">Frutos do Mar</a>
+            <a class="anchor-execut" id="anchor-execut">Pratos Executivos</a>
+            <a class="anchor-massas" id="anchor-massas">Massas</a>
+            <a class="anchor-acompa" id="anchor-acompa">Acompanhamentos</a>
+            <a class="anchor-bebida" id="anchor-bebida">Bebidas</a>
+            <a class="anchor-sobrem" id="anchor-sobrem">Sobremesas</a>
         </div>
 
         <div class="menu">
             <div class="dropdown" id="queridinhos-drop" data-dropdown>
                 <button class="link" id="link-queridinhos" data-dropdown-link>Queridinhos da Casa</button>
-                <div class="dropdown-menu" id="dropdown-menu-queridinhos">
-                    <div class="container">
-                        <a class="link_pratos" href="#">
-                            <div class="quadro_pratos">
-                                <div class="texto_quadro">
-                                    <div class="nome_prato">Tapioca</div>
-                                    <div class="desc_prato">A Tapioca é uma ótima opção para quem procura um alimento
-                                        saudável,
-                                        versátil e com baixo
-                                        índice
-                                        glicêmico</div>
-                                    <div class="preco_prato">R$ 7,00</div>
+                <div class="wrapper-queridinhos" id="wrapper-queridinhos">
+                    <div class="dropdown-menu" id="dropdown-menu-queridinhos">
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Tapioca</div>
+                                        <div class="desc_prato">A Tapioca é uma ótima opção para quem procura um
+                                            alimento
+                                            saudável,
+                                            versátil e com baixo
+                                            índice
+                                            glicêmico</div>
+                                        <div class="preco_prato">R$ 7,00</div>
 
-                                </div>
-                                <div class="foto_quadro">
-                                    <img src="./img/Tapioca.jpg" alt="Tapioca">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="container">
-                        <a class="link_pratos" href="#">
-                            <div class="quadro_pratos">
-                                <div class="texto_quadro">
-                                    <div class="nome_prato">Bolo de Rolo</div>
-                                    <div class="desc_prato">
-                                        Semelhante ao de um rocambole, mas com camadas ainda mais finas e
-                                        delicadas e recheio de goiabada
                                     </div>
-                                    <div class="preco_prato">R$ 20,00</div>
-
-                                </div>
-                                <div class="foto_quadro">
-                                    <img src="./img/Bolo_de_Rolo.webp" alt="Bolo de Rolo">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="container">
-                        <a class="link_pratos" href="#">
-                            <div class="quadro_pratos">
-                                <div class="texto_quadro">
-                                    <div class="nome_prato">Caranguejada</div>
-                                    <div class="desc_prato">
-                                        Feito com caranguejos cozidos em molho
-                                        preparado com leite de coco, azeite e temperos verdes
+                                    <div class="foto_quadro">
+                                        <img src="./img/Tapioca.jpg" alt="Tapioca">
                                     </div>
-                                    <div class="preco_prato">R$ 28,00</div>
+                                </div>
+                            </a>
+                        </div>
 
-                                </div>
-                                <div class="foto_quadro">
-                                    <img src="./img/Caranguejo.webp" alt="Caranguejada">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Bolo de Rolo</div>
+                                        <div class="desc_prato">
+                                            Semelhante ao de um rocambole, mas com camadas ainda mais finas e
+                                            delicadas e recheio de goiabada
+                                        </div>
+                                        <div class="preco_prato">R$ 20,00</div>
 
-                    <div class="container">
-                        <a class="link_pratos" href="#">
-                            <div class="quadro_pratos">
-                                <div class="texto_quadro">
-                                    <div class="nome_prato">Moqueca</div>
-                                    <div class="desc_prato">
-                                        Cozido de peixes, preparado com frutos do mar
-                                        e temperos (dentre eles o leite de coco e o azeite de dendê)</div>
-                                    <div class="preco_prato">R$ 28,00</div>
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Bolo_de_Rolo.webp" alt="Bolo de Rolo">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
 
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Caranguejada</div>
+                                        <div class="desc_prato">
+                                            Feito com caranguejos cozidos em molho
+                                            preparado com leite de coco, azeite e temperos verdes
+                                        </div>
+                                        <div class="preco_prato">R$ 28,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Caranguejo.webp" alt="Caranguejada">
+                                    </div>
                                 </div>
-                                <div class="foto_quadro">
-                                    <img src="./img/Moqueca.jpg" alt="Moqueca">
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Moqueca</div>
+                                        <div class="desc_prato">
+                                            Cozido de peixes, preparado com frutos do mar
+                                            e temperos (dentre eles o leite de coco e o azeite de dendê)</div>
+                                        <div class="preco_prato">R$ 28,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Moqueca.jpg" alt="Moqueca">
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+
 
             <div class="dropdown" id="petiscos-drop" data-dropdown>
                 <button class="link" id="link-petiscos" data-dropdown-link>Petiscos</button>
-                <div class="dropdown-menu" id="dropdown-menu-petiscos">
-                    <div class="container">
-                        <a class="link_pratos" href="#">
-                            <div class="quadro_pratos">
-                                <div class="texto_quadro">
-                                    <div class="nome_prato">Tapioca</div>
-                                    <div class="desc_prato">A Tapioca é uma ótima opção para quem procura um alimento
-                                        saudável,
-                                        versátil e com baixo
-                                        índice
-                                        glicêmico</div>
-                                    <div class="preco_prato">R$ 7,00</div>
+                <div class="wrapper-petiscos" id="wrapper-petiscos">
+                    <div class="dropdown-menu" id="dropdown-menu-petiscos">
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Tapioca</div>
+                                        <div class="desc_prato">A Tapioca é uma ótima opção para quem procura um
+                                            alimento
+                                            saudável,
+                                            versátil e com baixo
+                                            índice
+                                            glicêmico</div>
+                                        <div class="preco_prato">R$ 7,00</div>
 
-                                </div>
-                                <div class="foto_quadro">
-                                    <img src="./img/Tapioca.jpg" alt="Tapioca">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="container">
-                        <a class="link_pratos" href="#">
-                            <div class="quadro_pratos">
-                                <div class="texto_quadro">
-                                    <div class="nome_prato">Bolo de Rolo</div>
-                                    <div class="desc_prato">
-                                        Semelhante ao de um rocambole, mas com camadas ainda mais finas e
-                                        delicadas e recheio de goiabada
                                     </div>
-                                    <div class="preco_prato">R$ 20,00</div>
-
-                                </div>
-                                <div class="foto_quadro">
-                                    <img src="./img/Bolo_de_Rolo.webp" alt="Bolo de Rolo">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="container">
-                        <a class="link_pratos" href="#">
-                            <div class="quadro_pratos">
-                                <div class="texto_quadro">
-                                    <div class="nome_prato">Caranguejada</div>
-                                    <div class="desc_prato">
-                                        Feito com caranguejos cozidos em molho
-                                        preparado com leite de coco, azeite e temperos verdes
+                                    <div class="foto_quadro">
+                                        <img src="./img/Tapioca.jpg" alt="Tapioca">
                                     </div>
-                                    <div class="preco_prato">R$ 28,00</div>
+                                </div>
+                            </a>
+                        </div>
 
-                                </div>
-                                <div class="foto_quadro">
-                                    <img src="./img/Caranguejo.webp" alt="Caranguejada">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Bolo de Rolo</div>
+                                        <div class="desc_prato">
+                                            Semelhante ao de um rocambole, mas com camadas ainda mais finas e
+                                            delicadas e recheio de goiabada
+                                        </div>
+                                        <div class="preco_prato">R$ 20,00</div>
 
-                    <div class="container">
-                        <a class="link_pratos" href="#">
-                            <div class="quadro_pratos">
-                                <div class="texto_quadro">
-                                    <div class="nome_prato">Moqueca</div>
-                                    <div class="desc_prato">
-                                        Cozido de peixes, preparado com frutos do mar
-                                        e temperos (dentre eles o leite de coco e o azeite de dendê)</div>
-                                    <div class="preco_prato">R$ 28,00</div>
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Bolo_de_Rolo.webp" alt="Bolo de Rolo">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
 
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Caranguejada</div>
+                                        <div class="desc_prato">
+                                            Feito com caranguejos cozidos em molho
+                                            preparado com leite de coco, azeite e temperos verdes
+                                        </div>
+                                        <div class="preco_prato">R$ 28,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Caranguejo.webp" alt="Caranguejada">
+                                    </div>
                                 </div>
-                                <div class="foto_quadro">
-                                    <img src="./img/Moqueca.jpg" alt="Moqueca">
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Moqueca</div>
+                                        <div class="desc_prato">
+                                            Cozido de peixes, preparado com frutos do mar
+                                            e temperos (dentre eles o leite de coco e o azeite de dendê)</div>
+                                        <div class="preco_prato">R$ 28,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Moqueca.jpg" alt="Moqueca">
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+
+
+            <div class="dropdown" id="carnes-drop" data-dropdown>
+                <button class="link" id="link-carnes" data-dropdown-link>Carnes</button>
+                <div class="wrapper-carnes" id="wrapper-carnes">
+                    <div class="dropdown-menu" id="dropdown-menu-carnes">
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Tapioca</div>
+                                        <div class="desc_prato">A Tapioca é uma ótima opção para quem procura um
+                                            alimento
+                                            saudável,
+                                            versátil e com baixo
+                                            índice
+                                            glicêmico</div>
+                                        <div class="preco_prato">R$ 7,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Tapioca.jpg" alt="Tapioca">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Bolo de Rolo</div>
+                                        <div class="desc_prato">
+                                            Semelhante ao de um rocambole, mas com camadas ainda mais finas e
+                                            delicadas e recheio de goiabada
+                                        </div>
+                                        <div class="preco_prato">R$ 20,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Bolo_de_Rolo.webp" alt="Bolo de Rolo">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Caranguejada</div>
+                                        <div class="desc_prato">
+                                            Feito com caranguejos cozidos em molho
+                                            preparado com leite de coco, azeite e temperos verdes
+                                        </div>
+                                        <div class="preco_prato">R$ 28,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Caranguejo.webp" alt="Caranguejada">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Moqueca</div>
+                                        <div class="desc_prato">
+                                            Cozido de peixes, preparado com frutos do mar
+                                            e temperos (dentre eles o leite de coco e o azeite de dendê)</div>
+                                        <div class="preco_prato">R$ 28,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Moqueca.jpg" alt="Moqueca">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="dropdown" id="frutos-drop" data-dropdown>
+                <button class="link" id="link-frutos" data-dropdown-link>Frutos do Mar</button>
+                <div class="wrapper-frutos" id="wrapper-frutos">
+                    <div class="dropdown-menu" id="dropdown-menu-frutos">
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Tapioca</div>
+                                        <div class="desc_prato">A Tapioca é uma ótima opção para quem procura um
+                                            alimento
+                                            saudável,
+                                            versátil e com baixo
+                                            índice
+                                            glicêmico</div>
+                                        <div class="preco_prato">R$ 7,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Tapioca.jpg" alt="Tapioca">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Bolo de Rolo</div>
+                                        <div class="desc_prato">
+                                            Semelhante ao de um rocambole, mas com camadas ainda mais finas e
+                                            delicadas e recheio de goiabada
+                                        </div>
+                                        <div class="preco_prato">R$ 20,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Bolo_de_Rolo.webp" alt="Bolo de Rolo">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Caranguejada</div>
+                                        <div class="desc_prato">
+                                            Feito com caranguejos cozidos em molho
+                                            preparado com leite de coco, azeite e temperos verdes
+                                        </div>
+                                        <div class="preco_prato">R$ 28,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Caranguejo.webp" alt="Caranguejada">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Moqueca</div>
+                                        <div class="desc_prato">
+                                            Cozido de peixes, preparado com frutos do mar
+                                            e temperos (dentre eles o leite de coco e o azeite de dendê)</div>
+                                        <div class="preco_prato">R$ 28,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Moqueca.jpg" alt="Moqueca">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown" id="exec-drop" data-dropdown>
+                <button class="link" id="link-exec" data-dropdown-link>Pratos Executivos</button>
+                <div class="wrapper-exec" id="wrapper-exec">
+                    <div class="dropdown-menu" id="dropdown-menu-exec">
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Tapioca</div>
+                                        <div class="desc_prato">A Tapioca é uma ótima opção para quem procura um
+                                            alimento
+                                            saudável,
+                                            versátil e com baixo
+                                            índice
+                                            glicêmico</div>
+                                        <div class="preco_prato">R$ 7,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Tapioca.jpg" alt="Tapioca">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Bolo de Rolo</div>
+                                        <div class="desc_prato">
+                                            Semelhante ao de um rocambole, mas com camadas ainda mais finas e
+                                            delicadas e recheio de goiabada
+                                        </div>
+                                        <div class="preco_prato">R$ 20,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Bolo_de_Rolo.webp" alt="Bolo de Rolo">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Caranguejada</div>
+                                        <div class="desc_prato">
+                                            Feito com caranguejos cozidos em molho
+                                            preparado com leite de coco, azeite e temperos verdes
+                                        </div>
+                                        <div class="preco_prato">R$ 28,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Caranguejo.webp" alt="Caranguejada">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Moqueca</div>
+                                        <div class="desc_prato">
+                                            Cozido de peixes, preparado com exec do mar
+                                            e temperos (dentre eles o leite de coco e o azeite de dendê)</div>
+                                        <div class="preco_prato">R$ 28,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Moqueca.jpg" alt="Moqueca">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="dropdown" id="massas-drop" data-dropdown>
+                <button class="link" id="link-massas" data-dropdown-link>Massas</button>
+                <div class="wrapper-massas" id="wrapper-massas">
+                    <div class="dropdown-menu" id="dropdown-menu-massas">
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Tapioca</div>
+                                        <div class="desc_prato">A Tapioca é uma ótima opção para quem procura um
+                                            alimento
+                                            saudável,
+                                            versátil e com baixo
+                                            índice
+                                            glicêmico</div>
+                                        <div class="preco_prato">R$ 7,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Tapioca.jpg" alt="Tapioca">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Bolo de Rolo</div>
+                                        <div class="desc_prato">
+                                            Semelhante ao de um rocambole, mas com camadas ainda mais finas e
+                                            delicadas e recheio de goiabada
+                                        </div>
+                                        <div class="preco_prato">R$ 20,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Bolo_de_Rolo.webp" alt="Bolo de Rolo">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Caranguejada</div>
+                                        <div class="desc_prato">
+                                            Feito com caranguejos cozidos em molho
+                                            preparado com leite de coco, azeite e temperos verdes
+                                        </div>
+                                        <div class="preco_prato">R$ 28,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Caranguejo.webp" alt="Caranguejada">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Moqueca</div>
+                                        <div class="desc_prato">
+                                            Cozido de peixes, preparado com massas do mar
+                                            e temperos (dentre eles o leite de coco e o azeite de dendê)</div>
+                                        <div class="preco_prato">R$ 28,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Moqueca.jpg" alt="Moqueca">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="dropdown" id="acomp-drop" data-dropdown>
+                <button class="link" id="link-acomp" data-dropdown-link>Acompanhamentos</button>
+                <div class="wrapper-acomp" id="wrapper-acomp">
+                    <div class="dropdown-menu" id="dropdown-menu-acomp">
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Tapioca</div>
+                                        <div class="desc_prato">A Tapioca é uma ótima opção para quem procura um
+                                            alimento
+                                            saudável,
+                                            versátil e com baixo
+                                            índice
+                                            glicêmico</div>
+                                        <div class="preco_prato">R$ 7,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Tapioca.jpg" alt="Tapioca">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Bolo de Rolo</div>
+                                        <div class="desc_prato">
+                                            Semelhante ao de um rocambole, mas com camadas ainda mais finas e
+                                            delicadas e recheio de goiabada
+                                        </div>
+                                        <div class="preco_prato">R$ 20,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Bolo_de_Rolo.webp" alt="Bolo de Rolo">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Caranguejada</div>
+                                        <div class="desc_prato">
+                                            Feito com caranguejos cozidos em molho
+                                            preparado com leite de coco, azeite e temperos verdes
+                                        </div>
+                                        <div class="preco_prato">R$ 28,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Caranguejo.webp" alt="Caranguejada">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Moqueca</div>
+                                        <div class="desc_prato">
+                                            Cozido de peixes, preparado com acomp do mar
+                                            e temperos (dentre eles o leite de coco e o azeite de dendê)</div>
+                                        <div class="preco_prato">R$ 28,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Moqueca.jpg" alt="Moqueca">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="dropdown" id="bebidas-drop" data-dropdown>
+                <button class="link" id="link-bebidas" data-dropdown-link>Bebidas</button>
+                <div class="wrapper-bebidas" id="wrapper-bebidas">
+                    <div class="dropdown-menu" id="dropdown-menu-bebidas">
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Tapioca</div>
+                                        <div class="desc_prato">A Tapioca é uma ótima opção para quem procura um
+                                            alimento
+                                            saudável,
+                                            versátil e com baixo
+                                            índice
+                                            glicêmico</div>
+                                        <div class="preco_prato">R$ 7,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Tapioca.jpg" alt="Tapioca">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Bolo de Rolo</div>
+                                        <div class="desc_prato">
+                                            Semelhante ao de um rocambole, mas com camadas ainda mais finas e
+                                            delicadas e recheio de goiabada
+                                        </div>
+                                        <div class="preco_prato">R$ 20,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Bolo_de_Rolo.webp" alt="Bolo de Rolo">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Caranguejada</div>
+                                        <div class="desc_prato">
+                                            Feito com caranguejos cozidos em molho
+                                            preparado com leite de coco, azeite e temperos verdes
+                                        </div>
+                                        <div class="preco_prato">R$ 28,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Caranguejo.webp" alt="Caranguejada">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Moqueca</div>
+                                        <div class="desc_prato">
+                                            Cozido de peixes, preparado com bebidas do mar
+                                            e temperos (dentre eles o leite de coco e o azeite de dendê)</div>
+                                        <div class="preco_prato">R$ 28,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Moqueca.jpg" alt="Moqueca">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="dropdown" id="sobremesa-drop" data-dropdown>
+                <button class="link" id="link-sobremesa" data-dropdown-link>Sobremesas</button>
+                <div class="wrapper-sobremesa" id="wrapper-sobremesa">
+                    <div class="dropdown-menu" id="dropdown-menu-sobremesa">
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Tapioca</div>
+                                        <div class="desc_prato">A Tapioca é uma ótima opção para quem procura um
+                                            alimento
+                                            saudável,
+                                            versátil e com baixo
+                                            índice
+                                            glicêmico</div>
+                                        <div class="preco_prato">R$ 7,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Tapioca.jpg" alt="Tapioca">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Bolo de Rolo</div>
+                                        <div class="desc_prato">
+                                            Semelhante ao de um rocambole, mas com camadas ainda mais finas e
+                                            delicadas e recheio de goiabada
+                                        </div>
+                                        <div class="preco_prato">R$ 20,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Bolo_de_Rolo.webp" alt="Bolo de Rolo">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Caranguejada</div>
+                                        <div class="desc_prato">
+                                            Feito com caranguejos cozidos em molho
+                                            preparado com leite de coco, azeite e temperos verdes
+                                        </div>
+                                        <div class="preco_prato">R$ 28,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Caranguejo.webp" alt="Caranguejada">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="container">
+                            <a class="link_pratos" href="#">
+                                <div class="quadro_pratos">
+                                    <div class="texto_quadro">
+                                        <div class="nome_prato">Moqueca</div>
+                                        <div class="desc_prato">
+                                            Cozido de peixes, preparado com sobremesa do mar
+                                            e temperos (dentre eles o leite de coco e o azeite de dendê)</div>
+                                        <div class="preco_prato">R$ 28,00</div>
+
+                                    </div>
+                                    <div class="foto_quadro">
+                                        <img src="./img/Moqueca.jpg" alt="Moqueca">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div> <!--encerramento classe menu -->
     </div>
 
@@ -284,6 +981,9 @@
 
 
     </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
