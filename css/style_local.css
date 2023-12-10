@@ -68,6 +68,45 @@ h4 {
 }
 
 
+@media (max-width: 650px) {
+    .mapa {
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 580px) {
+    main h1 {
+        margin-left: 5rem;
+    }
+
+    main h4 {
+        margin-left: 5rem;
+    }
+
+    .mapa {
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    main h1 {
+        margin-left: 15rem;
+    }
+
+    main h4 {
+        margin-left: 15rem;
+    }
+
+    main h3 {
+        margin-left: 15rem;
+    }
+
+    .mapa {
+        margin-left: 15rem;
+    }
+}
+
+
 
 @keyframes pulse {
     0% {

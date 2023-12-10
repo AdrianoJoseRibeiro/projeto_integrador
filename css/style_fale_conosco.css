@@ -306,6 +306,55 @@ button {
 
 }
 
+@media (max-width: 1200px) {
+
+    main h1 {
+        font-size: 5rem;
+    }
+
+    main h2 {
+        font-size: 3rem;
+    }
+
+    .last_input {
+        width: 70rem;
+    }
+}
+
+@media (max-width: 850px) {
+
+    main h1 {
+        font-size: 4rem;
+    }
+
+    main img {
+        width: 85%;
+    }
+
+    main h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 715px) {
+
+    .last_input {
+        width: 45rem;
+    }
+
+    span {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 570px) {
+
+    span {
+        font-size: 1rem;
+    }
+}
+
+
 .last_input.errado {
     border: solid 2px red;
     background-color: red;

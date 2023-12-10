@@ -374,6 +374,7 @@ button {
     min-height: 46.2rem;
 }
 
+
 .titulo-bem-vindo {
     text-align: center;
     margin-top: 6rem;
@@ -440,6 +441,90 @@ button {
     animation: pulse 2s linear infinite;
 
 }
+
+
+@media (max-width: 1300px) {
+    .bem-vindo {
+        flex-direction: column;
+    }
+
+    .img-bem-vindo {
+        margin: 0 auto;
+    }
+
+    .texto-bem-vindo {
+        margin: 0 auto;
+    }
+
+    .btn-quem,
+    .btn-reserve {
+        left: -10%;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .img-bem-vindo {
+        max-width: 48rem;
+        min-height: 26.2rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .btn-quem {
+        width: 8em;
+        height: 4em;
+        margin-left: 13rem;
+        margin-right: 1rem;
+    }
+
+    .btn-reserve {
+        width: 8em;
+        height: 4em;
+        margin: 2em;
+        top: -1rem;
+    }
+
+}
+
+@media (max-width: 415px) {
+
+    .btn-quem {
+        width: 8em;
+        height: 4em;
+        margin-left: 8rem;
+        margin-right: 0;
+    }
+
+    .btn-reserve {
+        width: 8em;
+        height: 4em;
+        margin: 2em;
+        top: -1rem;
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    .btn-quem {
+        width: 6em;
+        height: 4em;
+        margin-left: 8rem;
+        margin-right: 0;
+    }
+
+    .btn-reserve {
+        width: 6em;
+        height: 4em;
+        margin: 2em;
+    }
+
+}
+
 
 
 .prep-melhor {
@@ -520,6 +605,91 @@ button {
 }
 
 
+
+@media (max-width: 1300px) {
+    .prep-melhor {
+        flex-direction: column-reverse;
+    }
+
+    .img-prep-melhor {
+        margin: 0 auto;
+    }
+
+    .texto-prep-melhor {
+        margin: 0 auto;
+    }
+
+    .btn-menu,
+    .btn-pedidos {
+        left: -10%;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .img-prep-melhor {
+        max-width: 48rem;
+        min-height: 26.2rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .btn-menu {
+        width: 8em;
+        height: 4em;
+        margin-left: 13rem;
+        margin-right: 1rem;
+    }
+
+    .btn-pedidos {
+        width: 8em;
+        height: 4em;
+        margin: 2em;
+        top: -1rem;
+    }
+
+}
+
+@media (max-width: 415px) {
+
+    .btn-menu {
+        width: 8em;
+        height: 4em;
+        margin-left: 8rem;
+        margin-right: 0;
+    }
+
+    .btn-pedidos {
+        width: 8em;
+        height: 4em;
+        margin: 2em;
+        top: -1rem;
+    }
+
+}
+
+@media (max-width: 350px) {
+
+    .btn-menu {
+        width: 6em;
+        height: 4em;
+        margin-left: 8rem;
+        margin-right: 0;
+    }
+
+    .btn-pedidos {
+        width: 6em;
+        height: 4em;
+        margin: 2em;
+    }
+
+}
+
+
+
 .cadastro-login {
     display: flex;
     justify-content: space-around;
@@ -594,9 +764,17 @@ button {
 
 }
 
+
+@media (max-width: 1300px) {
+    .cadastro-login {
+        flex-direction: column;
+    }
+}
+
+
+
 .gift-card {
     margin-top: 8rem;
-    position: relative;
 
 }
 
@@ -604,11 +782,15 @@ button {
     text-align: center;
 }
 
+.gift-flex {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
 .img-gift1 {
     width: 28.6rem;
     height: 26.5rem;
-    margin-top: 3rem;
-    margin-left: 6rem;
 }
 
 .btn-gift {
@@ -617,11 +799,10 @@ button {
     height: 5em;
     background-color: black;
     color: white;
-    /* margin-left: 80px;
-    margin-bottom: 160px; */
-    position: absolute;
-    top: 22rem;
-    left: 40%;
+    top: 10rem;
+    position: relative;
+
+
 }
 
 .btn-gift::before {
@@ -641,13 +822,30 @@ button {
 }
 
 
-
 .img-gift2 {
     width: 28.6rem;
     height: 26.5rem;
-    align-self: center;
-    margin-left: 56rem;
 }
+
+@media (max-width: 950px) {
+    .gift-flex {
+        flex-direction: column;
+    }
+
+    .img-gift1 {
+        margin: 0 auto;
+    }
+
+    .img-gift2 {
+        margin: 15rem auto;
+    }
+
+    .btn-gift {
+        top: 8rem;
+        left: 30%;
+    }
+}
+
 
 @keyframes pulse {
     0% {

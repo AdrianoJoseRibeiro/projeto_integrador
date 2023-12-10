@@ -35,14 +35,143 @@ button {
 
 
 
-main {
-    height: 45rem;
+.era-uma-vez {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 180px;
 }
 
-main h1 {
-    margin-top: 2rem;
+
+.img-era-uma-vez {
+    max-width: 68rem;
+    min-height: 46.2rem;
 }
 
+@media (max-width: 1200px) {
+    .era-uma-vez {
+        flex-direction: column;
+    }
+
+    .img-era-uma-vez {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 720px) {
+
+    .img-era-uma-vez {
+        max-width: 48rem;
+        min-height: 26.2rem;
+    }
+}
+
+.titulo-era-uma-vez {
+    text-align: center;
+    margin-top: 6rem;
+
+}
+
+
+.paragrafo-era-uma-vez {
+    text-align: justify;
+    margin: 2.5rem 2rem;
+    font-size: 2.25rem;
+    line-height: 3.5rem;
+
+}
+
+
+.nossa-historia {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 180px;
+    background-color: rgb(221, 241, 237);
+
+}
+
+.img-nossa-historia {
+    max-width: 68rem;
+    min-height: 46.2rem;
+}
+
+@media (max-width: 1200px) {
+    .nossa-historia {
+        flex-direction: column-reverse;
+    }
+
+    .img-nossa-historia {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 720px) {
+
+    .img-nossa-historia {
+        max-width: 48rem;
+        min-height: 26.2rem;
+    }
+}
+
+.titulo-nossa-historia {
+    text-align: center;
+    margin-top: 6rem;
+
+}
+
+
+.paragrafo-nossa-historia {
+    text-align: justify;
+    margin: 2.5rem 2rem;
+    font-size: 2.25rem;
+    line-height: 3.5rem;
+
+}
+
+
+
+.nossa-equipe {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 180px;
+}
+
+.img-nossa-equipe {
+    max-width: 68rem;
+    min-height: 46.2rem;
+}
+
+@media (max-width: 1200px) {
+    .nossa-equipe {
+        flex-direction: column;
+    }
+
+    .img-nossa-equipe {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 720px) {
+
+    .img-nossa-equipe {
+        max-width: 48rem;
+        min-height: 26.2rem;
+    }
+}
+
+.titulo-nossa-equipe {
+    text-align: center;
+    margin-top: 6rem;
+
+}
+
+
+.paragrafo-nossa-equipe {
+    text-align: justify;
+    margin: 2.5rem 2rem;
+    font-size: 2.25rem;
+    line-height: 3.5rem;
+
+}
 
 
 

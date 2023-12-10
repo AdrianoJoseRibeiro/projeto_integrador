@@ -121,6 +121,106 @@ button {
 }
 
 
+@media (max-width: 1000px) {
+    .apresentacao {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .apresentacao img {
+        margin-left: 5rem;
+    }
+
+    .msg-apresentacao {
+        align-items: center;
+    }
+
+    .msg-corpo h3 {
+        font-size: 3.3rem;
+    }
+
+    .msg-corpo p {
+        margin: 0 10%;
+    }
+
+    .btn-gift {
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 750px) {
+    .btn-gift {
+        margin-left: 20%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .apresentacao img {
+        margin-left: 10rem;
+    }
+
+    .msg-apresentacao h2 {
+        font-size: 4rem;
+        margin-left: 8rem;
+    }
+
+    .msg-apresentacao p {
+        align-items: center;
+        margin-left: 8rem;
+    }
+
+    .msg-corpo h3 {
+        font-size: 3rem;
+        margin-left: 8rem;
+    }
+
+    .msg-corpo p {
+        align-items: center;
+        margin-left: 8rem;
+    }
+
+    .btn-gift {
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .apresentacao img {
+        margin-left: 20rem;
+    }
+
+    .msg-apresentacao h2 {
+        font-size: 4rem;
+        margin-left: 18rem;
+    }
+
+    .msg-apresentacao p {
+        align-items: center;
+        margin-left: 18rem;
+    }
+
+    .msg-corpo h3 {
+        font-size: 3rem;
+        margin-left: 18rem;
+    }
+
+    .msg-corpo p {
+        align-items: center;
+        margin-left: 18rem;
+    }
+
+    .btn-gift {
+        margin-left: 25%;
+        width: 18em;
+        height: 2.5em;
+        font-size: 1.5rem;
+    }
+}
+
+
 
 @keyframes pulse {
     0% {

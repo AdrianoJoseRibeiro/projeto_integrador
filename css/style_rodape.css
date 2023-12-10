@@ -52,6 +52,20 @@ button {
     align-items: center;
 }
 
+@media (max-width: 800px) {
+
+    .rodape {
+        height: 50rem;
+        width: 100%;
+    }
+
+    .flex-rodape {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
 .tel {
     font-size: 2rem;
     font-weight: 600;

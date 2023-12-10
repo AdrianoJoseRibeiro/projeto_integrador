@@ -38,7 +38,7 @@ header {
     justify-content: space-around;
     align-items: center;
     min-height: 20vh;
-
+    position: relative;
 }
 
 #logo {
@@ -46,6 +46,20 @@ header {
     min-height: 16vh;
     margin-top: 1rem;
     border-radius: 2rem;
+    position: relative;
+}
+
+#check {
+    display: none;
+}
+
+.icons {
+    position: absolute;
+    right: 15%;
+    font-size: 7rem;
+    color: rgba(254, 129, 14, 1);
+    cursor: pointer;
+    display: none;
 }
 
 .link-nav {
@@ -54,6 +68,7 @@ header {
     color: black;
     font-size: 2rem;
     position: relative;
+    margin-right: 2.3rem;
 }
 
 .link-nav::after {
@@ -79,6 +94,7 @@ header {
 .btn-cadastro {
     width: 11em;
     height: 4em;
+    margin-right: 2.7rem;
     background-color: black;
     color: white;
     position: relative;
@@ -122,6 +138,177 @@ header {
     outline-offset: 3px;
     outline-width: 3px;
     animation: pulse 2s linear infinite;
+
+}
+
+
+@media (max-width: 1400px) {
+    .header {
+        padding: 1.3rem 5%;
+    }
+}
+
+@media (max-width: 1300px) {
+
+
+    #logo {
+        left: -30%;
+    }
+
+    .icons {
+        display: inline-flex;
+    }
+
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+
+    .icons #close-icon {
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        height: 0;
+        overflow: hidden;
+        transition: .4s ease;
+    }
+
+    #check:checked~.navbar {
+        display: block;
+        height: 48rem;
+
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2.5rem;
+        line-height: 4rem;
+        width: 22rem;
+        margin: .1rem auto;
+        text-align: center;
+        transform: translateY(-10px);
+        opacity: 0;
+        transition: .4s ease;
+    }
+
+    #check:checked~.navbar a {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: calc(.15s * var(--i));
+    }
+
+    .link-nav:hover::after {
+        transform-origin: 0%;
+        transform: scaleX(0);
+    }
+
+
+    .btn-cadastro {
+        width: 8em;
+        height: 4em;
+        margin-right: 2.7rem;
+        background-color: black;
+        color: white;
+        position: relative;
+        bottom: -10%;
+        left: -5%;
+    }
+
+    .btn-login {
+        width: 5.2em;
+        height: 4em;
+        background-color: rgba(254, 129, 14, 1);
+        color: white;
+        position: relative;
+        bottom: -10%;
+        left: 0%;
+    }
+
+    header {
+        margin-bottom: 40rem;
+    }
+}
+
+
+@media (max-width: 680px) {
+
+    .icons {
+        right: 10%;
+    }
+
+    .navbar {
+        left: 10%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .icons {
+        right: 5%;
+    }
+
+    .navbar {
+        left: 15%;
+    }
+
+}
+
+@media (max-width: 540px) {
+    #logo {
+        left: -25%;
+    }
+
+    .icons {
+        right: 10%;
+    }
+
+    .navbar {
+        left: 22%;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .icons {
+        right: -25%;
+    }
+
+    .navbar {
+        left: 29%;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .icons {
+        right: -35%;
+    }
+
+    .navbar {
+        left: 38%;
+    }
+
+    .btn-cadastro {
+        left: 15%;
+    }
+
+    .btn-login {
+
+        left: 30%;
+    }
 
 }
 

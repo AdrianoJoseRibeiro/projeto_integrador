@@ -10,29 +10,44 @@
     <link rel="stylesheet" href="./css/style_login.css">
     <link rel="stylesheet" href="./css/style_quem.css">
     <link rel="stylesheet" href="./css/style_rodape.css">
-    <script src="./js/login.js" defer></script>
+
 
     <!-- adiconado para poder criar os ícones das redes sociais no rodapé -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- adiconado para poder criar os ícones do cabeçalho responsivo -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="./js/login.js" defer></script>
 </head>
 
 <body>
     <header>
-        <!-- <span id="logo">Cantinho<br>Nordestino</span> -->
+
         <img src="./img/Logo_1.JPG" alt="Logo Restaurante" id="logo">
-        <a href="index.html" class="link-nav">Home</a>
-        <a href="#" class="link-nav">Quem Somos</a>
-        <a href="menu.html" class="link-nav">Menu</a>
-        <a href="pedidos.html" class="link-nav">Pedidos</a>
-        <a href="reservas.html" class="link-nav">Reservas</a>
-        <a href="gift.html" class="link-nav">Gift Card</a>
-        <a href="local.html" class="link-nav">Localização</a>
-        <a href="fale_conosco.html" class="link-nav">Fale
-            Conosco</a>
-        <button class="btn-cadastro">Cadastre-se</button>
-        <button class="btn-login">Log in</button>
+
+        <input type="checkbox" name="check-nav" id="check">
+        <label for="check" class="icons">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <i class="bx bx-x" id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="index.html" class="link-nav">Home</a>
+            <a href="#" class="link-nav">Quem Somos</a>
+            <a href="menu.html" class="link-nav">Menu</a>
+            <a href="pedidos.html" class="link-nav">Pedidos</a>
+            <a href="reservas.html" class="link-nav">Reservas</a>
+            <a href="gift.html" class="link-nav">Gift Card</a>
+            <a href="local.html" class="link-nav">Localização</a>
+            <a href="fale_conosco.html" class="link-nav">Fale
+                Conosco</a>
+            <button class="btn-cadastro">Cadastre-se</button>
+            <button class="btn-login">Log in</button>
+        </nav>
+
     </header>
 
     <section class="wrapper-form-login">
@@ -96,26 +111,67 @@
 
 
     <main>
-        <br><br>
-        <h1>BEM VINDO AO CANTINHO NORDESTINO</h1>
-        <br>
-        <br>
-        <h2>QUEM SOMOS</h2>
-        <br>
-        <br>
-        <p>
-            SOMOS UM RESTAURANTE ESPECIALIZADO EM COMIDAS TÍPICAS REGIONAIS QUE DIVULGA TAMBÉM AS CULTURAS DE CADA
-            ESTADO DO NOSSO PAÍS
-        </p>
-        <br>
-        <br>
-        <p>
-            TEMOS EXCELENCIA EM QUALIDADE E ENTREGAMOS POR DELIVERY
-        </p>
-        <br>
-        <br>
+
+        <div class="era-uma-vez" id="era-uma-vez">
+            <img src="./img/Ponta_Negra_RN.jpeg" alt="Praia Ponta Negra" class="img-era-uma-vez">
+            <div class="texto-era-uma-vez">
+                <h2 class="titulo-era-uma-vez">ERA UMA VEZ</h2>
+                <p class="paragrafo-era-uma-vez">
+                    Na ensolarada Ponta Negra, Natal - RN, nasceu um sonho gastronômico
+                    que celebra as raízes autênticas da culinária nordestina.
+                    Os visionários fundadores, José Carlos e Elys Priscila,
+                    trazem consigo a rica tradição da comida regional
+                    em um ambiente encantador à beira-mar.
+                    Inspirados por suas origens e pela paixão por sabores autênticos,
+                    eles deram vida ao Cantinho Nordestino.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="nossa-historia" id="nossa-historia">
+            <div class="texto-nossa-historia">
+                <h2 class="titulo-nossa-historia">NOSSA HISTÓRIA</h2>
+                <p class="paragrafo-nossa-historia">
+                    Em 2023, José e Elys uniram suas paixões e curiosidades pela tecnologia e culinária para criar uma
+                    experiência única em um restaurante moderno.
+                    <br><br>
+                    Desde o início, eles se esforçaram para não apenas oferecer uma experiência gastronômica
+                    excepcional, mas também para conectar o Cantinho Nordestino ao mundo digital.
+                    <br><br>
+                    Conscientes da importância da presença online, dedicaram tempo e esforço para criar um site
+                    envolvente que
+                    refletisse a autenticidade do restaurante.
+                    <br><br>
+                    O site do Cantinho Nordestino não é apenas uma vitrine virtual do cardápio, mas uma extensão do
+                    calor e da hospitalidade que os clientes encontram no local.
+                    <br><br>
+                    Com um design intuitivo, o site
+                    proporciona uma experiência fácil e agradável aos visitantes, permitindo que explorem o cardápio,
+                    conheçam a história do restaurante e façam reservas com praticidade.
+
+                </p>
+            </div>
+            <img src="./img/Programando.JPG" alt="Programando o Site" class="img-nossa-historia">
+        </div>
+
+
+        <div class="nossa-equipe" id="nossa-equipe">
+            <img src="./img/Equipe_Restaurante.jpeg" alt="Equipe Restaurante" class="img-nossa-equipe">
+            <div class="texto-nossa-equipe">
+                <h2 class="titulo-nossa-equipe">NOSSA EQUIPE</h2>
+                <p class="paragrafo-nossa-equipe">
+                    Desde os chefs que dominam as receitas tradicionais até os simpáticos garçons que garantem um
+                    serviço acolhedor, a equipe do Cantinho Nordestino é o coração pulsante do restaurante. Cada
+                    membro da equipe contribui para a atmosfera única e amigável, proporcionando aos hóspedes uma
+                    experiência gastronômica memorável. Não se trata apenas de servir comida, mas de criar uma conexão
+                    genuína com os clientes, tornando cada visita uma celebração da rica herança culinária nordestina.
+                </p>
+            </div>
+        </div>
 
     </main>
+
     <footer class="rodape">
         <div class="flex-rodape">
 

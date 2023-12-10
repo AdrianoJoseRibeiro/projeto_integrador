@@ -40,7 +40,8 @@ button {
 
 
 .titulo,
-.corpo-texto {
+.corpo-texto,
+.corpo-texto-h3 {
     text-align: center;
 }
 
@@ -89,6 +90,26 @@ button {
 
 }
 
+@media (max-width: 850px) {
+    .titulo {
+        font-size: 4rem;
+    }
+
+    .corpo-texto {
+        font-size: 2rem;
+    }
+
+    .corpo-texto-h3 {
+        font-size: 1.8rem;
+
+    }
+
+    #qtd-pessoas {
+        margin: 5rem 0;
+    }
+
+
+}
 
 
 @keyframes pulse {

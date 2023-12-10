@@ -17,24 +17,37 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- adiconado para poder criar os ícones do cabeçalho responsivo -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <script src="./js/fale_conosco.js" defer></script>
     <script src="./js/login.js" defer></script>
 </head>
 
 <body>
     <header>
-        <!-- <span id="logo">Cantinho<br>Nordestino</span> -->
+
         <img src="./img/Logo_1.JPG" alt="Logo Restaurante" id="logo">
-        <a href="index.html" class="link-nav">Home</a>
-        <a href="quem_somos.html" class="link-nav">Quem Somos</a>
-        <a href="menu.html" class="link-nav">Menu</a>
-        <a href="pedidos.html" class="link-nav">Pedidos</a>
-        <a href="reservas.html" class="link-nav">Reservas</a>
-        <a href="gift.html" class="link-nav">Gift Card</a>
-        <a href="local.html" class="link-nav">Localização</a>
-        <a href="#" class="link-nav">Fale Conosco</a>
-        <button class="btn-cadastro">Cadastre-se</button>
-        <button class="btn-login">Log in</button>
+
+        <input type="checkbox" name="check-nav" id="check">
+        <label for="check" class="icons">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <i class="bx bx-x" id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="index.html" class="link-nav">Home</a>
+            <a href="quem_somos.html" class="link-nav">Quem Somos</a>
+            <a href="menu.html" class="link-nav">Menu</a>
+            <a href="pedidos.html" class="link-nav">Pedidos</a>
+            <a href="reservas.html" class="link-nav">Reservas</a>
+            <a href="gift.html" class="link-nav">Gift Card</a>
+            <a href="local.html" class="link-nav">Localização</a>
+            <a href="#" class="link-nav">Fale Conosco</a>
+            <button class="btn-cadastro">Cadastre-se</button>
+            <button class="btn-login">Log in</button>
+        </nav>
+
     </header>
 
 
